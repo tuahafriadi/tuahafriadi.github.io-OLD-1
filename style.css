@@ -1,0 +1,96 @@
+/* CSS Stylesheet created by Adi Wijaya */
+/* Webpages is not Responsive Layout only Fixed Layout */
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+}
+body {
+        color: silver;
+        font-family: 'Roboto','Segoe UI',sans-serif;
+        background: #111;
+        user-select: none;
+        -webkit-user-select: none;
+        cursor: default;
+}
+html {
+        scroll-behavior: smooth;
+}
+::-moz-selection {
+  background-color: #eee;
+  color: #222
+}
+.myPortf {
+        width: 100vw;
+        height: 100vh;
+        background-attachment: fixed;
+}
+.container-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+}
+.myPages {
+        margin-top: 0px;
+}
+.box-pages {
+        border: 1px solid #333;
+        border-radius: 90%;
+        width: 320px;
+        height: 320px; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10;
+        transition: 0.5s ease-in-out;
+}
+.box-pages:hover {
+        border: 1px solid #888;
+        border-radius: 20%;
+        background: #222;
+        width: 310px;
+        height: 310px;
+        transition: 0.2s ease-in-out;
+        cursor: pointer;
+}
+.box-pages:active {
+        border: 1px solid #888;
+        border-radius: 0%;
+        background: #333;
+        transition: 0.2s ease-in-out;
+        cursor: pointer;
+}
+.box-pages h1 {
+        color: #EEE;
+        font-family: 'Poppins';
+        font-weight: 400;
+        font-size: 18px;
+        letter-spacing: 8;
+}
+a {
+        text-decoration: none;
+}
+.watermark {
+        left: 0;
+        bottom: 0;
+        position: fixed;
+        background: transparent;
+        border-top: 1px solid #222;
+        width: 100%;
+        height: 90;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+p {
+        color: #777;
+        font-size: 11px;
+        font-weight: 400;
+        white-space: pre-line;
+        line-height: 1.5;
+}
