@@ -98,7 +98,7 @@ nav a:hover {
 .myPortf {
         width: 100vw;
         height: 100vh;
-        background-image: url('gaming-blur.jpg');
+        background-image: url('../img/gaming-blur.jpg');
         background-attachment: fixed;
         background-size: cover;
         background-position: center;
