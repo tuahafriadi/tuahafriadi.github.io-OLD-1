@@ -7,11 +7,11 @@
 * {
         margin: 0;
         padding: 0;
-        overflow: hidden;
+        overflow-x: hidden;
 }
 body {
         color: silver;
-        font-family: 'Roboto','Segoe UI',sans-serif;
+        font-family: 'Poppins';
         background: #111;
         user-select: none;
         -webkit-user-select: none;
@@ -24,78 +24,248 @@ html {
   background-color: #eee;
   color: #222
 }
+/* width */
+body::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+  background: none;
+  margin-block: .9em;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background: #aaa;
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+nav {
+        right: 0;
+        top: 0;
+        position: fixed;
+        width: 100%;
+        height: 50;
+        background: transparent;
+}
+.navLeft {
+        float: left;
+        position: relative;
+        left: 20;
+        top: 10;
+}
+.navLeft a {
+        color: #5F5F5F;
+        font-size: 16px;
+        padding: 0 5;
+        font-weight: 400;
+        white-space: pre-line;
+        border-bottom: 0px solid white;
+        transition: 0.5s ease-in-out;
+}
+.navLeft a:hover {
+        color: white;
+}
+.navRight {
+        float: right;
+        position: relative;
+        right: 20;
+        top: 10;
+}
+.navRight a {
+        color: #5F5F5F;
+        font-size: 16px;
+        padding: 0 5;
+        font-weight: 400;
+        white-space: pre-line;
+        border-bottom: 0px solid white;
+        transition: 0.5s ease-in-out;
+}
+.navRight a:hover {
+        color: white;
+}
 .myPortf {
         width: 100vw;
         height: 100vh;
+        background-image: url('gaming-blur.jpg');
         background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
 }
 .container-1 {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100%;
+        background: rgba(0, 0, 0, 0.4);
 }
 .myPages {
         margin-top: 0px;
 }
 .box-pages {
+        border: 0px solid silver;
         color: #888;
-        border: 1px solid #333;
-        border-radius: 90%;
-        width: 320px;
-        height: 320px; 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 50;
+}
+.txtOne {
+        color: #CCC;
+        font-weight: 400;
+        font-size: 30px;
+        transition: 0.7s ease-in-out;
+}
+.txtOne:hover,.txtTwo:hover,.txtThree:hover {
+        color: #ccc;
+        text-shadow: 0px 0px 2px white;
+}
+.box-pages p {
+        color: #aaa;
+        font-size: 15px;
+        margin-bottom: 5px;
+}
+img.me {
+        width: 100;
+        margin: 10 0;
+}
+.download-image {
+        text-decoration: none;
+        color: white;
+        background: #0080ff;
+        padding: 10 40;
+        margin-top: 20px;
+        font-size: 15px;
+        border: 2px solid #1171d1;
+        font-family: 'Poppins';
+        border-radius: 30px;
         transition: 0.5s ease-in-out;
 }
-.box-pages:hover {
-        color: #eee;
-        border: 1px solid #888;
-        border-radius: 20%;
-        background: #222;
-        width: 310px;
-        height: 310px;
-        transition: 0.2s ease-in-out;
-        cursor: pointer;
-}
-.box-pages:active {
-        border: 1px solid #888;
-        border-radius: 0%;
-        background: #333;
-        transition: 0.2s ease-in-out;
-        cursor: pointer;
-}
-.box-pages h1 {
-        font-family: 'Poppins';
-        font-weight: 400;
-        font-size: 18px;
-        letter-spacing: 8;
-        transition: 0.2s ease-in-out;
+.download-image:hover {
+        background: #d4175c;
+        transition: 0.5s ease-in-out;
 }
 a {
         text-decoration: none;
 }
-.watermark {
+.social {
+        margin-top: 20;
+}
+img.social-icon {
+        padding: 0 7;
+        opacity: 0.3;
+        transition: 0.5s ease-in-out;
+}
+img.social-icon:hover {
+        opacity: 1;
+}
+
+
+
+
+/** Support Pages **/
+.mySupport {
+        color: #bbb;
+        width: 100vw;
+        height: 100vh;
+        background: #111;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+}
+.container-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+}
+.myPages-2 {
+        margin-top: 20px;
+}
+.myPages-2 h1 {
+        color: #fff;
+}
+.myPages-2 h6 {
+        color: silver;
+        font-weight: 400;
+        font-size: 14px;
+        white-space: pre-line;
+}
+
+/** Copyright Pages **/
+.myCopyright {
+        color: #bbb;
+        width: 100vw;
+        height: 15vh;
+        background: #141b21;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+}
+.container-5 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+}
+.myPages-5 {
+        margin-top: 20px;
+}
+.box-pages-5 h1 {
+        color: white;
+        font-size: 14px;
+        font-weight: 400;
+}
+
+
+.footer {
+        color: #5F5F5F;
+        font-family: 'Calibri';
         left: 0;
         bottom: 0;
         position: fixed;
         background: transparent;
-        border-top: 1px solid #222;
+        border-top: 1px solid transparent;
         width: 100%;
-        height: 90;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        height: 30;
 }
-p {
-        color: #777;
-        font-size: 11px;
+.left {
+        float: left;
+        position: relative;
+        left: 20;
+        bottom: 1;
+}
+.left a {
+        color: #5F5F5F;
+        font-size: 16px;
         font-weight: 400;
         white-space: pre-line;
-        line-height: 1.5;
+        text-decoration: none;
+        transition: 0.5s ease-in-out;
 }
+.left a:hover {
+        color: white;
+}
+.right {
+        float: right;
+        position: relative;
+        right: 20;
+        bottom: 1;
+}
+.right a {
+        color: #5F5F5F;
+        font-size: 16px;
+        padding: 0 5;
+        font-weight: 400;
+        white-space: pre-line;
+        border-bottom: 0px solid white;
+        transition: 0.5s ease-in-out;
+}
+.right a:hover {
+        color: white;
+}
+
+
 
 
 
@@ -160,5 +330,8 @@ p {
                 background: silver;
                 color: #333;
                 cursor: pointer;
+        }
+        .footer {
+                display: none;
         }
 }
