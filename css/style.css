@@ -301,15 +301,15 @@ img.social-icon:hover {
         }
         .noticeBox h1 {
                 color: #eee;
-                font-family: 'Roboto';
+                font-family: 'Poppins';
                 font-size: 18px;
                 font-weight: 400;
                 line-height: 2;
         }
         .noticeBox p {
                 color: #aaa;
-                font-family: 'Roboto';
-                font-size: 13px;
+                font-family: 'Poppins';
+                font-size: 12px;
                 font-weight: 400;
                 white-space: pre-line;
         }
